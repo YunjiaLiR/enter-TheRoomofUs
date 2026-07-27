@@ -77,37 +77,37 @@ index.html                       # update <title> to "The Room of Us"
 - Extend `index.css`/`tailwind.config.ts` with a warm romantic palette (deep navy-night background, warm amber/gold lamp-light accent, soft cream text, blush highlight) as CSS variables, plus a `font-serif`-leaning elegant display font pairing already available via system/Google-safe stack — used consistently instead of hardcoded colors in components.
 
 ## Implementation Checklist
-- [ ] Add `@dnd-kit/core`, `@dnd-kit/sortable`, `@dnd-kit/utilities` dependencies
-- [ ] Generate illustrated bedroom-at-night background image (nano-banana-pro) with bed, window+London skyline+Big Ben, table-tennis gear, piano, chessboard, hiking shoes, mountain map, travel trinkets
-- [ ] Add warm romantic design tokens to `index.css` + `tailwind.config.ts` (no hardcoded colors in components)
-- [ ] Create `src/game/gameConfig.ts` with all editable fields and inline "replace here" comments
-- [ ] Create `src/game/types.ts` shared types
-- [ ] Create `src/game/audio.ts` Web Audio helpers (tone/chime/success/error/note) with mute support
-- [ ] Create `src/game/useSessionStorage.ts` + `GameContext.tsx` (progress, clues, completedPuzzles, muted, reducer, sessionStorage persistence, reset action)
-- [ ] Build `IntroScreen`, `RoomScene`, `Hotspot`, `ProgressIndicator`, `ClueInventory`, `GameControls`, `PuzzleModal`
-- [ ] Build `BigBenPuzzle`: DDMMYY input, validates against `relationshipDateDDMMYY`, 2-attempt hint, success reveals "UNDER"
-- [ ] Build `TableTennisPuzzle`: aim+serve interaction (mouse/touch/keyboard), correct target reveals "THE"
-- [ ] Build `PianoPuzzle`: plays placeholder melody stopping before last note, labelled keys, correct note reveals "B"
-- [ ] Build `ChessPuzzle`: custom board rendering config position, only configured piece movable, correct move reveals "E"
-- [ ] Build `HikingPuzzle`: footprints intro animation, mountain multi-select grid, "Check Route", 2-attempt count hint, correct selection draws animated dotted trail + reveals "D"
-- [ ] Build `FinalFrameHotspot` (visible only at 5/5) + `FinalPuzzle` drag-and-drop reorder with dnd-kit, validates against fragment order
-- [ ] Build `FinalScene` (dim room, footprints-to-bed animation, light beam under bed, success sound) → `FinalScreen` (Mission Complete, message reveal, `Confetti`, Play again)
-- [ ] Wire `Reset Game` button (clears sessionStorage + context state, returns to intro) and mute/unmute control into `GameControls`, present throughout main game
-- [ ] Replace `src/pages/Index.tsx` to render `RoomOfUsGame`; update `index.html` `<title>`
+- [passed] Add `@dnd-kit/core`, `@dnd-kit/sortable`, `@dnd-kit/utilities` dependencies
+- [passed] Generate illustrated bedroom-at-night background image (nano-banana-pro) with bed, window+London skyline+Big Ben, table-tennis gear, piano, chessboard, hiking shoes, mountain map, travel trinkets
+- [passed] Add warm romantic design tokens to `index.css` + `tailwind.config.ts` (no hardcoded colors in components)
+- [passed] Create `src/game/gameConfig.ts` with all editable fields and inline "replace here" comments
+- [passed] Create `src/game/types.ts` shared types
+- [passed] Create `src/game/audio.ts` Web Audio helpers (tone/chime/success/error/note) with mute support
+- [passed] Create `src/game/useSessionStorage.ts` + `GameContext.tsx` (progress, clues, completedPuzzles, muted, reducer, sessionStorage persistence, reset action)
+- [passed] Build `IntroScreen`, `RoomScene`, `Hotspot`, `ProgressIndicator`, `ClueInventory`, `GameControls`, `PuzzleModal`
+- [passed] Build `BigBenPuzzle`: DDMMYY input, validates against `relationshipDateDDMMYY`, 2-attempt hint, success reveals "UNDER"
+- [passed] Build `TableTennisPuzzle`: aim+serve interaction (mouse/touch/keyboard), correct target reveals "THE"
+- [passed] Build `PianoPuzzle`: plays placeholder melody stopping before last note, labelled keys, correct note reveals "B"
+- [passed] Build `ChessPuzzle`: custom board rendering config position, only configured piece movable, correct move reveals "E"
+- [passed] Build `HikingPuzzle`: footprints intro animation, mountain multi-select grid, "Check Route", 2-attempt count hint, correct selection draws animated dotted trail + reveals "D"
+- [passed] Build `FinalFrameHotspot` (visible only at 5/5) + `FinalPuzzle` drag-and-drop reorder with dnd-kit, validates against fragment order
+- [passed] Build `FinalScene` (dim room, footprints-to-bed animation, light beam under bed, success sound) → `FinalScreen` (Mission Complete, message reveal, `Confetti`, Play again)
+- [passed] Wire `Reset Game` button (clears sessionStorage + context state, returns to intro) and mute/unmute control into `GameControls`, present throughout main game
+- [passed] Replace `src/pages/Index.tsx` to render `RoomOfUsGame`; update `index.html` `<title>`
 
 ## Verification Checklist
-- [ ] Entering `/` shows Intro screen with exact title/subtitle copy and "Enter the Room" button; clicking transitions to room
-- [ ] Progress indicator reads "Memories recovered: 0/5" initially and increments correctly per solved puzzle; inventory shows 5 empty slots filling with fragments in solve order
-- [ ] Big Ben: wrong code shows generic wrong feedback twice, then hint text; correct `relationshipDateDDMMYY` plays chime, animates, adds "UNDER", locks as complete
-- [ ] Table tennis: wrong target shows miss message and allows retry; correct target plays impact animation and adds "THE"; reachable via keyboard only
-- [ ] Piano: incorrect key shows "creative interpretation" message; correct note completes melody, animates, adds "B"; keys operable by click and keyboard
-- [ ] Chess: only configured movable piece(s) can be picked up; wrong destination shows warning message; correct move animates and adds "E"
-- [ ] Hiking: selecting wrong set twice shows count hint with correct number of mountains; correct set places flags, draws animated trail, adds "D"
-- [ ] Final fragment panel only appears at 5/5; drag-and-drop works via mouse, touch, and keyboard (dnd-kit sortable keyboard sensor); only "UNDER THE BED" order is accepted
-- [ ] Final scene dims room, animates footprints to bed and a light beam, plays success sound, then shows Mission Complete screen with boyfriend name, personal message reveal button, and Play again button that fully resets state
-- [ ] Mute control silences all sounds app-wide; Reset Game button at any point returns to Intro with cleared sessionStorage
-- [ ] Responsive check at mobile width: hotspots remain tappable, modals fit viewport, no horizontal overflow
-- [ ] `pnpm lint` and project build pass with no errors
+- [passed] Entering `/` shows Intro screen with exact title/subtitle copy and "Enter the Room" button; clicking transitions to room
+- [passed] Progress indicator reads "Memories recovered: 0/5" initially and increments correctly per solved puzzle; inventory shows 5 empty slots filling with fragments in solve order
+- [passed] Big Ben: wrong code shows generic wrong feedback twice, then hint text; correct `relationshipDateDDMMYY` plays chime, animates, adds "UNDER", locks as complete
+- [manual-required] Table tennis: wrong target shows miss message and allows retry; correct target plays impact animation and adds "THE"; reachable via keyboard only
+- [manual-required] Piano: incorrect key shows "creative interpretation" message; correct note completes melody, animates, adds "B"; keys operable by click and keyboard
+- [manual-required] Chess: only configured movable piece(s) can be picked up; wrong destination shows warning message; correct move animates and adds "E"
+- [manual-required] Hiking: selecting wrong set twice shows count hint with correct number of mountains; correct set places flags, draws animated trail, adds "D"
+- [manual-required] Final fragment panel only appears at 5/5; drag-and-drop works via mouse, touch, and keyboard (dnd-kit sortable keyboard sensor); only "UNDER THE BED" order is accepted
+- [manual-required] Final scene dims room, animates footprints to bed and a light beam, plays success sound, then shows Mission Complete screen with boyfriend name, personal message reveal button, and Play again button that fully resets state
+- [manual-required] Mute control silences all sounds app-wide; Reset Game button at any point returns to Intro with cleared sessionStorage
+- [manual-required] Responsive check at mobile width: hotspots remain tappable, modals fit viewport, no horizontal overflow
+- [passed] `pnpm lint` and project build pass with no errors
 
 ## Files to Edit for Personalization (documented in gameConfig.ts comments)
 - Relationship date, boyfriend's name, personal birthday message

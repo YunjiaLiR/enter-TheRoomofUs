@@ -5,89 +5,103 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* === The Room of Us — warm romantic night palette === */
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    /* Night background — deep navy/indigo */
+    --background: 230 46% 7%;
+    --foreground: 40 48% 94%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --card: 230 38% 12%;
+    --card-foreground: 40 48% 94%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --popover: 230 42% 10%;
+    --popover-foreground: 40 48% 94%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Primary — warm amber/gold lamp light */
+    --primary: 38 90% 60%;
+    --primary-foreground: 230 46% 8%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Secondary — muted indigo panel */
+    --secondary: 230 30% 20%;
+    --secondary-foreground: 40 48% 94%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --muted: 230 30% 18%;
+    --muted-foreground: 230 18% 68%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    /* Accent — soft blush pink */
+    --accent: 350 62% 74%;
+    --accent-foreground: 230 46% 8%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --destructive: 0 72% 58%;
+    --destructive-foreground: 40 48% 94%;
 
-    --radius: 0.5rem;
+    --border: 230 26% 22%;
+    --input: 230 26% 22%;
+    --ring: 38 90% 60%;
 
-    --sidebar-background: 0 0% 98%;
+    --radius: 0.75rem;
 
-    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-background: 230 42% 9%;
+    --sidebar-foreground: 40 48% 94%;
+    --sidebar-primary: 38 90% 60%;
+    --sidebar-primary-foreground: 230 46% 8%;
+    --sidebar-accent: 230 30% 18%;
+    --sidebar-accent-foreground: 40 48% 94%;
+    --sidebar-border: 230 26% 22%;
+    --sidebar-ring: 38 90% 60%;
 
-    --sidebar-primary: 240 5.9% 10%;
+    /* === Game-specific tokens === */
+    --night: 230 50% 5%;
+    --night-deep: 232 52% 3%;
+    --night-soft: 230 40% 11%;
+    --lamp: 38 92% 60%;
+    --lamp-glow: 38 96% 72%;
+    --cream: 40 52% 95%;
+    --blush: 350 64% 76%;
+    --blush-deep: 350 55% 62%;
+    --sage: 150 28% 60%;
+    --gold: 44 86% 64%;
 
-    --sidebar-primary-foreground: 0 0% 98%;
+    --gradient-warm: linear-gradient(135deg, hsl(38 92% 60%), hsl(18 84% 56%));
+    --gradient-blush: linear-gradient(135deg, hsl(350 64% 76%), hsl(28 80% 62%));
+    --gradient-night: linear-gradient(180deg, hsl(230 50% 8%) 0%, hsl(232 52% 4%) 100%);
+    --gradient-lamp-radial: radial-gradient(circle at 50% 40%, hsl(38 92% 60% / 0.22), transparent 60%);
 
-    --sidebar-accent: 240 4.8% 95.9%;
+    --glow-lamp: 0 0 40px hsl(38 95% 65% / 0.5);
+    --glow-blush: 0 0 30px hsl(350 70% 72% / 0.45);
+    --shadow-elegant: 0 20px 60px -20px hsl(230 60% 4% / 0.8);
 
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --transition-smooth: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
-
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
-
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --background: 230 46% 7%;
+    --foreground: 40 48% 94%;
+    --card: 230 38% 12%;
+    --card-foreground: 40 48% 94%;
+    --popover: 230 42% 10%;
+    --popover-foreground: 40 48% 94%;
+    --primary: 38 90% 60%;
+    --primary-foreground: 230 46% 8%;
+    --secondary: 230 30% 20%;
+    --secondary-foreground: 40 48% 94%;
+    --muted: 230 30% 18%;
+    --muted-foreground: 230 18% 68%;
+    --accent: 350 62% 74%;
+    --accent-foreground: 230 46% 8%;
+    --destructive: 0 72% 58%;
+    --destructive-foreground: 40 48% 94%;
+    --border: 230 26% 22%;
+    --input: 230 26% 22%;
+    --ring: 38 90% 60%;
+    --sidebar-background: 230 42% 9%;
+    --sidebar-foreground: 40 48% 94%;
+    --sidebar-primary: 38 90% 60%;
+    --sidebar-primary-foreground: 230 46% 8%;
+    --sidebar-accent: 230 30% 18%;
+    --sidebar-accent-foreground: 40 48% 94%;
+    --sidebar-border: 230 26% 22%;
+    --sidebar-ring: 38 90% 60%;
   }
 }
 
@@ -98,6 +112,7 @@
 
   body {
     @apply bg-background text-foreground;
+    font-family: "Inter", system-ui, -apple-system, sans-serif;
   }
 }
 
@@ -106,4 +121,53 @@ body,
 #root {
   width: 100%;
   height: 100%;
+}
+
+#root {
+  max-width: none;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+/* === Custom utilities for the game === */
+@layer utilities {
+  .font-display {
+    font-family: "Cormorant Garamond", "Playfair Display", Georgia, serif;
+  }
+  .font-serif-elegant {
+    font-family: "Playfair Display", Georgia, serif;
+  }
+
+  .text-gradient-warm {
+    background: var(--gradient-warm);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+  }
+
+  .text-gradient-blush {
+    background: var(--gradient-blush);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+  }
+
+  .bg-night-gradient {
+    background: var(--gradient-night);
+  }
+
+  .glow-lamp {
+    box-shadow: var(--glow-lamp);
+  }
+  .glow-blush {
+    box-shadow: var(--glow-blush);
+  }
+
+  .scrollbar-thin {
+    scrollbar-width: thin;
+    scrollbar-color: hsl(var(--lamp) / 0.4) transparent;
+  }
 }
