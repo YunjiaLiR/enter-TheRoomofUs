@@ -155,14 +155,14 @@ This room is made of us—every object holds a memory, and every puzzle leads ba
 The London nights beneath Big Ben.
 The table-tennis matches we played until our arms ached.
 The slightly off-key piano evenings.
-The burning brain chess games 
+The burning brain chess games
 The mountains we climbed, and all the ones still waiting for us.
 
 Five memories. One truth, hidden safely under the bed all along:
 
 I love you—today, tomorrow, and every day that follows.
 
-Love you 
+Love you
 
 Yunjia`,
 };
