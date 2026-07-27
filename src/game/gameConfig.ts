@@ -153,19 +153,9 @@ export const gameConfig: GameConfig = {
 
   // REPLACE: the birthday message revealed under the bed.
   personalMessage: `Happy Birthday!!!
-This room is made of us—every object holds a memory, and every puzzle leads back to a moment we shared.
-
-The London nights beneath Big Ben.
-The table-tennis matches we played until our arms ached.
-The slightly off-key piano evenings.
-The burning brain chess games
-The mountains we climbed, and all the ones still waiting for us.
-
-Five memories. One truth, hidden safely under the bed all along:
-
-I love you—today, tomorrow, and every day that follows.
-
-Love you
+  
+I hope the year ahead brings you lots of happiness, success, and wonderful moments. May everything go smoothly for you, and may all your wishes come true.
+Also, I love you—today, tomorrow, and every day that follows.
 
 Yunjia`,
 };
