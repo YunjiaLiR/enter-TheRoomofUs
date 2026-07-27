@@ -81,7 +81,7 @@ export const gameConfig: GameConfig = {
       { id: "t5", label: "Far right" },
     ],
     // REPLACE: which target scores the point.
-    correctTargetId: "t1",
+    correctTargetId: "t2",
   },
 
   piano: {
