@@ -81,7 +81,7 @@ export const gameConfig: GameConfig = {
       { id: "t5", label: "Far right" },
     ],
     // REPLACE: which target scores the point.
-    correctTargetId: "t3",
+    correctTargetId: "t1",
   },
 
   piano: {
@@ -149,11 +149,20 @@ export const gameConfig: GameConfig = {
   },
 
   // REPLACE: the birthday message revealed under the bed.
-  personalMessage: `Happy birthday, Joshua.
+  personalMessage: `Happy Birthday!!!
+This room is made of us—every object holds a memory, and every puzzle leads back to a moment we shared.
 
-This room is made of us — every object a memory, every puzzle a moment we lived. The London night we watched Big Ben chime. The table-tennis we played until our arms ached. The off-key piano nights. The chess games I let you win (sometimes). The mountains we swore we would climb.
+The London nights beneath Big Ben.
+The table-tennis matches we played until our arms ached.
+The slightly off-key piano evenings.
+The burning brain chess games 
+The mountains we climbed, and all the ones still waiting for us.
 
-Five memories. One truth I have kept under the bed, hidden safely all along: I love you, today and every day after.
+Five memories. One truth, hidden safely under the bed all along:
 
-Make a wish. I will be the candle.`,
+I love you—today, tomorrow, and every day that follows.
+
+Love you 
+
+Yunjia`,
 };
