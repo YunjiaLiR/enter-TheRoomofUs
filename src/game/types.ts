@@ -109,6 +109,9 @@ export interface GameConfig {
   /** Fragments in SOLUTION order. Joining (honouring spaceAfter) yields "UNDER THE BED". */
   clueFragments: ClueFragment[];
 
+  /** Four-digit code that unlocks the final birthday letter. */
+  finalPin: string;
+
   hints: {
     bigBen: string;
     tableTennis: string;

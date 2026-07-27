@@ -59,17 +59,21 @@ export function IntroScreen() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.9, ease: "easeOut" }}
       >
-        <p className="mb-4 text-[0.7rem] uppercase tracking-[0.45em] text-blush/80">
-          A birthday escape room
-        </p>
         <h1 className="font-display text-[3.4rem] font-semibold leading-[0.95] text-cream sm:text-[5rem]">
-          The Room
-          <br />
-          <span className="text-gradient-warm">of Us</span>
+          Happy <span className="text-gradient-warm">Birthday.</span>
         </h1>
         <p className="mt-6 max-w-md text-pretty text-[0.95rem] leading-relaxed text-cream/70 sm:text-base">
-          Five memories wait in the dark. Find them, and something under the bed
-          will find you.
+          Your gift is already here—hidden somewhere in this room.
+        </p>
+        <p className="mt-4 max-w-md text-pretty text-[0.95rem] leading-relaxed text-cream/70 sm:text-base">
+          I’m not going to tell you where it is.
+        </p>
+        <p className="mt-4 max-w-md text-pretty text-[0.95rem] leading-relaxed text-cream/70 sm:text-base">
+          Explore the room, follow our memories, solve the puzzles, and find it
+          yourself.
+        </p>
+        <p className="mt-4 max-w-md text-pretty font-display text-lg italic text-lamp/90 sm:text-xl">
+          Good luck!
         </p>
 
         <Button
@@ -86,9 +90,6 @@ export function IntroScreen() {
         </Button>
       </motion.div>
 
-      <p className="absolute bottom-5 z-10 text-[0.7rem] text-muted-foreground/60">
-        Best with sound on · Progress saved for this session
-      </p>
     </div>
   );
 }
