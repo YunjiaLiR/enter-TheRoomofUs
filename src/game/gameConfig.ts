@@ -139,6 +139,9 @@ export const gameConfig: GameConfig = {
     { id: "f5", text: "D", spaceAfter: false },
   ],
 
+  // REPLACE: the four-digit code on the physical birthday gift.
+  finalPin: "0818",
+
   hints: {
     bigBen: "Six digits, day then month then year — the day we became 'us'.",
     tableTennis: "Aim dead centre, where the paddle's shadow falls at noon.",

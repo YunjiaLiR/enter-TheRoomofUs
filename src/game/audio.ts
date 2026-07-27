@@ -94,6 +94,13 @@ export function playError() {
   playTone({ freq: 174.61, start: 0.12, duration: 0.28, type: "sawtooth", gain: 0.1 });
 }
 
+/** quiet metallic release — the final keepsake lock opening */
+export function playUnlock() {
+  playTone({ freq: 392, start: 0, duration: 0.28, type: "sine", gain: 0.09 });
+  playTone({ freq: 523.25, start: 0.11, duration: 0.42, type: "sine", gain: 0.1 });
+  playTone({ freq: 783.99, start: 0.27, duration: 0.55, type: "triangle", gain: 0.07 });
+}
+
 /** single sustained note — piano key / melody playback */
 export function playNote(freq: number, duration = 0.4) {
   playTone({
