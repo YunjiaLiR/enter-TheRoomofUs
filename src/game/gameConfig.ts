@@ -8,7 +8,7 @@ import type { GameConfig } from "./types";
 
 export const gameConfig: GameConfig = {
   // REPLACE: the person this room is built for.
-  boyfriendName: "Sam",
+  boyfriendName: "Joshua",
   // REPLACE: relationship start date as DDMMYY. "150620" = 15 June 2020.
   relationshipDateDDMMYY: "250324",
 
@@ -118,16 +118,16 @@ export const gameConfig: GameConfig = {
     // The true route is the UK Three Peaks challenge.
     options: [
       { id: "ben-nevis", name: "Ben Nevis" },
-      { id: "snowdon", name: "Snowdon" },
-      { id: "scafell-pike", name: "Scafell Pike" },
+      { id: "snowdon", name: "Snowdonia" },
+      { id: "scafell-pike", name: "泰山" },
       { id: "fuji", name: "Mount Fuji" },
-      { id: "k2", name: "K2" },
-      { id: "table", name: "Table Mountain" },
-      { id: "kilimanjaro", name: "Kilimanjaro" },
-      { id: "mont-blanc", name: "Mont Blanc" },
+      { id: "k2", name: "衡山" },
+      { id: "table", name: "恒山" },
+      { id: "kilimanjaro", name: "华山" },
+      { id: "mont-blanc", name: "嵩山" },
     ],
     // REPLACE: the mountains that form the real hiking route.
-    correctIds: ["ben-nevis", "scafell-pike", "snowdon"],
+    correctIds: [snowdon", "scafell-pike", "mont-blanc"],
   },
 
   // Fragments in SOLUTION order. Joined (honouring spaceAfter) -> "UNDER THE BED".
@@ -149,7 +149,7 @@ export const gameConfig: GameConfig = {
   },
 
   // REPLACE: the birthday message revealed under the bed.
-  personalMessage: `Happy birthday, Sam.
+  personalMessage: `Happy birthday, Joshua.
 
 This room is made of us — every object a memory, every puzzle a moment we lived. The London night we watched Big Ben chime. The table-tennis we played until our arms ached. The off-key piano nights. The chess games I let you win (sometimes). The mountains we swore we would climb.
 
