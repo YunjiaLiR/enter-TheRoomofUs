@@ -10,7 +10,7 @@ export const gameConfig: GameConfig = {
   // REPLACE: the person this room is built for.
   boyfriendName: "Sam",
   // REPLACE: relationship start date as DDMMYY. "150620" = 15 June 2020.
-  relationshipDateDDMMYY: "150620",
+  relationshipDateDDMMYY: "250324",
 
   roomBackgroundImage: "/room-background.png",
 
