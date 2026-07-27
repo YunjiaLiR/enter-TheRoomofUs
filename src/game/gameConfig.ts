@@ -127,7 +127,7 @@ export const gameConfig: GameConfig = {
       { id: "mont-blanc", name: "嵩山" },
     ],
     // REPLACE: the mountains that form the real hiking route.
-    correctIds: ["snowdon", "scafell-pike", "mont-blanc"],
+    correctIds: [“snowdon", "scafell-pike", "mont-blanc"],
   },
 
   // Fragments in SOLUTION order. Joined (honouring spaceAfter) -> "UNDER THE BED".
