@@ -69,7 +69,7 @@ export function IntroScreen() {
           I’m not going to tell you where it is.
         </p>
         <p className="mt-4 max-w-md text-pretty text-[0.95rem] leading-relaxed text-cream/70 sm:text-base">
-          Explore the room, follow our memories, solve the puzzles, and find it
+          Explore the room, follow the memories, solve the puzzles, and find it
           yourself.
         </p>
         <p className="mt-4 max-w-md text-pretty font-display text-lg italic text-lamp/90 sm:text-xl">
