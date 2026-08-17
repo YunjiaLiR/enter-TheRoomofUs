@@ -27,17 +27,18 @@ export function RoomScene() {
   }
 
   return (
-    <div className="relative h-full w-full overflow-hidden bg-night-gradient">
+    <div className="relative flex h-full w-full flex-col overflow-hidden bg-night-gradient">
       {/* HUD */}
-      <div className="absolute inset-x-0 top-0 z-30 flex flex-wrap items-center justify-between gap-x-4 gap-y-2 border-b border-border/40 bg-night/70 px-4 py-2.5 backdrop-blur-md">
+      <div className="z-30 flex shrink-0 flex-wrap items-center justify-between gap-x-4 gap-y-2 border-b border-border/40 bg-night/70 px-4 py-2.5 backdrop-blur-md">
         <ProgressIndicator progress={progress} />
         <ClueInventory collectedIds={state.collectedFragmentIds} />
         <GameControls />
       </div>
 
-      {/* Stage */}
-      <div className="absolute inset-0 flex items-center justify-center p-2 pt-[4.75rem]">
-        <div className="relative aspect-[43/24] w-full max-w-[min(1500px,calc((100vh_-_5.25rem)*1.7917))] overflow-hidden rounded-xl border border-border/40 shadow-[0_24px_70px_-24px_hsl(var(--night)/0.95)]">
+      {/* Stage — fills exactly the space left after the HUD, then letterboxes
+          the 43:24 room to fit within it (never taller or wider than available). */}
+      <div className="relative flex min-h-0 flex-1 items-center justify-center overflow-hidden p-2">
+        <div className="relative aspect-[43/24] h-full w-auto max-w-full overflow-hidden rounded-xl border border-border/40 shadow-[0_24px_70px_-24px_hsl(var(--night)/0.95)]">
           <img
             src={gameConfig.roomBackgroundImage}
             alt="A warm, cozy wood-toned bedroom"
