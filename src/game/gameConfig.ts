@@ -9,22 +9,22 @@ import type { GameConfig } from "./types";
 export const gameConfig: GameConfig = {
   // REPLACE: the person this room is built for.
   boyfriendName: "Joshua",
-  // REPLACE: relationship start date as DDMMYY. "150620" = 15 June 2020.
-  relationshipDateDDMMYY: "250324",
 
   roomBackgroundImage: "/room-background.png",
+  // REPLACE: swap in your own illustration to change the city skyline puzzle artwork.
+  citySkylineImage: "/city-skyline.png",
 
   // Hotspot positions are % of the 16:9 stage and are tuned to the generated
   // background. Adjust here if you regenerate the image.
   hotspots: [
     {
-      id: "bigBen",
+      id: "citySkyline",
       x: 19,
       y: 8,
       w: 19,
       h: 47,
-      label: "The window and the London skyline",
-      echo: "A window. Big Ben glows in the distance.",
+      label: "The window and the city skyline",
+      echo: "A window. The city glitters in the distance.",
       fragmentId: "f1",
     },
     {
@@ -71,6 +71,19 @@ export const gameConfig: GameConfig = {
 
   // Region over the bed used for the final "under the bed" reveal.
   finalBedHotspot: { x: 1, y: 58, w: 22, h: 40 },
+
+  mayorTransport: {
+    options: [
+      { id: "helicopter", label: "Helicopter" },
+      { id: "car", label: "Car" },
+      { id: "train", label: "Train" },
+      { id: "ferry", label: "Ferry" },
+      { id: "walking", label: "Walking" },
+      { id: "lightning", label: "Lightning" },
+    ],
+    // REPLACE: which option id is correct.
+    correctOptionId: "helicopter",
+  },
 
   tableTennis: {
     targets: [
@@ -143,7 +156,7 @@ export const gameConfig: GameConfig = {
   finalPin: "0818",
 
   hints: {
-    bigBen: "Six digits, day then month then year — the day we became 'us'.",
+    citySkyline: "Think about how a mayor might travel quickly across the city.",
     tableTennis: "Aim dead centre, where the paddle's shadow falls at noon.",
     piano: "The melody is one note shy. Reach up to the seventh key.",
     chess:

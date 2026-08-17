@@ -1,7 +1,7 @@
 // Shared types for The Room of Us game (config + state).
 
 export type PuzzleId =
-  | "bigBen"
+  | "citySkyline"
   | "tableTennis"
   | "piano"
   | "chess"
@@ -71,17 +71,28 @@ export interface MountainOption {
   name: string;
 }
 
+export interface MayorTransportOption {
+  id: string;
+  label: string;
+}
+
 export interface GameConfig {
   /** REPLACE: the person this room is built for. */
   boyfriendName: string;
-  /** REPLACE: relationship start date as DDMMYY, e.g. "150620" = 15 June 2020. */
-  relationshipDateDDMMYY: string;
 
   roomBackgroundImage: string;
+  /** REPLACE: swap in your own illustration to change the puzzle artwork. */
+  citySkylineImage: string;
 
   hotspots: HotspotConfig[];
   /** region over the bed used for the final reveal (% of stage). */
   finalBedHotspot: { x: number; y: number; w: number; h: number };
+
+  mayorTransport: {
+    options: MayorTransportOption[];
+    /** REPLACE: which option id is correct. */
+    correctOptionId: string;
+  };
 
   tableTennis: {
     targets: TableTennisTarget[];
@@ -113,7 +124,7 @@ export interface GameConfig {
   finalPin: string;
 
   hints: {
-    bigBen: string;
+    citySkyline: string;
     tableTennis: string;
     piano: string;
     chess: string;

@@ -16,7 +16,7 @@ const STORAGE_KEY = "room-of-us:v1";
 const initialState: GameState = {
   phase: "intro",
   completedPuzzles: {
-    bigBen: false,
+    citySkyline: false,
     tableTennis: false,
     piano: false,
     chess: false,

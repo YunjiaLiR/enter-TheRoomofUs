@@ -11,7 +11,7 @@ import { GameControls } from "./GameControls";
 import { FinalFrameHotspot } from "./FinalFrameHotspot";
 import { FinalScene } from "./FinalScene";
 import { FinalScreen } from "./FinalScreen";
-import { BigBenPuzzle } from "./puzzles/BigBenPuzzle";
+import { CitySkylinePuzzle } from "./puzzles/CitySkylinePuzzle";
 import { TableTennisPuzzle } from "./puzzles/TableTennisPuzzle";
 import { PianoPuzzle } from "./puzzles/PianoPuzzle";
 import { ChessPuzzle } from "./puzzles/ChessPuzzle";
@@ -89,7 +89,7 @@ export function RoomScene() {
       </AnimatePresence>
 
       {/* Puzzle modals */}
-      <BigBenPuzzle open={active === "bigBen"} onOpenChange={(o) => !o && setActive(null)} />
+      <CitySkylinePuzzle open={active === "citySkyline"} onOpenChange={(o) => !o && setActive(null)} />
       <TableTennisPuzzle open={active === "tableTennis"} onOpenChange={(o) => !o && setActive(null)} />
       <PianoPuzzle open={active === "piano"} onOpenChange={(o) => !o && setActive(null)} />
       <ChessPuzzle open={active === "chess"} onOpenChange={(o) => !o && setActive(null)} />
