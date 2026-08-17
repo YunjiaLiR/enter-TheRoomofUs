@@ -35,11 +35,6 @@ export interface ClueFragment {
   spaceAfter?: boolean;
 }
 
-export interface TableTennisTarget {
-  id: string;
-  label: string;
-}
-
 export interface PianoNote {
   note: string;
   freq: number;
@@ -66,14 +61,20 @@ export interface ChessPiece {
   movable?: boolean;
 }
 
-export interface MountainOption {
-  id: string;
-  name: string;
-}
-
 export interface MayorTransportOption {
   id: string;
   label: string;
+}
+
+export interface TableTennisPlayerOption {
+  id: string;
+  /** path to the person's photo */
+  image: string;
+}
+
+export interface MountainOption {
+  id: string;
+  name: string;
 }
 
 export interface GameConfig {
@@ -95,8 +96,10 @@ export interface GameConfig {
   };
 
   tableTennis: {
-    targets: TableTennisTarget[];
-    correctTargetId: string;
+    /** REPLACE: swap in your own four photos to change the answer choices. */
+    players: TableTennisPlayerOption[];
+    /** REPLACE: which player id is the correct answer. */
+    correctPlayerId: string;
   };
 
   piano: {

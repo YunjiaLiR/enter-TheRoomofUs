@@ -86,15 +86,15 @@ export const gameConfig: GameConfig = {
   },
 
   tableTennis: {
-    targets: [
-      { id: "t1", label: "Far left" },
-      { id: "t2", label: "Left" },
-      { id: "t3", label: "Center" },
-      { id: "t4", label: "Right" },
-      { id: "t5", label: "Far right" },
+    // REPLACE: swap in your own four photos to change the answer choices.
+    players: [
+      { id: "p1", image: "/person-1.png" },
+      { id: "p2", image: "/person-2.png" },
+      { id: "p3", image: "/person-3.png" },
+      { id: "p4", image: "/person-4.png" },
     ],
-    // REPLACE: which target scores the point.
-    correctTargetId: "t1",
+    // REPLACE: which player id is the correct answer.
+    correctPlayerId: "p2",
   },
 
   piano: {
@@ -157,7 +157,7 @@ export const gameConfig: GameConfig = {
 
   hints: {
     citySkyline: "Think about how a mayor might travel quickly across the city.",
-    tableTennis: "Aim dead centre, where the paddle's shadow falls at noon.",
+    tableTennis: "Look for the confident stance and the steady eyes on the ball.",
     piano: "The melody is one note shy. Reach up to the seventh key.",
     chess:
       "The black king is walled in by its own pawns. Slide a rook along the back rank to finish it.",
