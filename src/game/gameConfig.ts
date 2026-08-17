@@ -98,19 +98,23 @@ export const gameConfig: GameConfig = {
   },
 
   piano: {
-    // Placeholder melody. The LAST note must equal `correctNote`.
+    // Short recognisable "Happy Birthday" phrase, played automatically when
+    // the piano is opened — no note-guessing required.
     // SWAP LATER: replace oscillator playback in audio.ts with a real recording.
     melody: [
-      { note: "G", freq: 392.0, duration: 0.4 },
-      { note: "E", freq: 329.63, duration: 0.4 },
-      { note: "D", freq: 293.66, duration: 0.4 },
-      { note: "E", freq: 329.63, duration: 0.4 },
-      { note: "G", freq: 392.0, duration: 0.4 },
-      { note: "A", freq: 440.0, duration: 0.5 },
-      { note: "B", freq: 493.88, duration: 0.6 },
+      { note: "G", freq: 392.0, duration: 0.25 },
+      { note: "G", freq: 392.0, duration: 0.25 },
+      { note: "A", freq: 440.0, duration: 0.45 },
+      { note: "G", freq: 392.0, duration: 0.45 },
+      { note: "C", freq: 523.25, duration: 0.45 },
+      { note: "B", freq: 493.88, duration: 0.9 },
+      { note: "G", freq: 392.0, duration: 0.25 },
+      { note: "G", freq: 392.0, duration: 0.25 },
+      { note: "A", freq: 440.0, duration: 0.45 },
+      { note: "G", freq: 392.0, duration: 0.45 },
+      { note: "D", freq: 587.33, duration: 0.45 },
+      { note: "C", freq: 523.25, duration: 0.9 },
     ],
-    correctNote: "B",
-    availableKeys: ["C", "D", "E", "F", "G", "A", "B"],
   },
 
   chess: {
@@ -158,7 +162,6 @@ export const gameConfig: GameConfig = {
   hints: {
     citySkyline: "Think about how a mayor might travel quickly across the city.",
     tableTennis: "Look for the confident stance and the steady eyes on the ball.",
-    piano: "The melody is one note shy. Reach up to the seventh key.",
     chess:
       "The black king is walled in by its own pawns. Slide a rook along the back rank to finish it.",
     hiking: "The true route is the UK Three Peaks — three mountains, one challenge.",

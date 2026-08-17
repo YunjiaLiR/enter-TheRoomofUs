@@ -103,11 +103,10 @@ export interface GameConfig {
   };
 
   piano: {
-    /** Placeholder melody. The last note must equal `correctNote`.
-     *  SWAP LATER: replace oscillator playback in audio.ts with a real audio file. */
+    /** Short "Happy Birthday" melody section, played automatically when the
+     *  piano is opened. SWAP LATER: replace oscillator playback in audio.ts
+     *  with a real audio recording. */
     melody: PianoNote[];
-    correctNote: string;
-    availableKeys: string[];
   };
 
   chess: {
@@ -129,7 +128,6 @@ export interface GameConfig {
   hints: {
     citySkyline: string;
     tableTennis: string;
-    piano: string;
     chess: string;
     hiking: string;
   };
