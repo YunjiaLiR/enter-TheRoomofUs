@@ -37,7 +37,7 @@ export function RoomScene() {
 
       {/* Stage */}
       <div className="absolute inset-0 flex items-center justify-center p-2 pt-[4.75rem]">
-        <div className="relative aspect-[43/24] max-h-full w-full max-w-[1500px] overflow-hidden rounded-xl border border-border/40 shadow-[0_24px_70px_-24px_hsl(var(--night)/0.95)]">
+        <div className="relative aspect-[43/24] w-full max-w-[min(1500px,calc((100vh_-_5.25rem)*1.7917))] overflow-hidden rounded-xl border border-border/40 shadow-[0_24px_70px_-24px_hsl(var(--night)/0.95)]">
           <img
             src={gameConfig.roomBackgroundImage}
             alt="A warm, cozy wood-toned bedroom"
