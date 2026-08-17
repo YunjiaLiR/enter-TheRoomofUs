@@ -73,6 +73,10 @@ export default {
 					DEFAULT: 'hsl(var(--paper))',
 					soft: 'hsl(var(--paper-soft))',
 				},
+				ink: {
+					DEFAULT: 'hsl(var(--ink))',
+					soft: 'hsl(var(--ink-soft))',
+				},
 				blush: {
 					DEFAULT: 'hsl(var(--blush))',
 					deep: 'hsl(var(--blush-deep))',

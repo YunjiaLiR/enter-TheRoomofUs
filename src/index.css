@@ -67,6 +67,9 @@
     /* Warm ivory/off-white — used for the intro and final pages */
     --paper: 38 42% 96%;
     --paper-soft: 34 38% 90%;
+    /* Warm dark brown/charcoal for readable text on light paper surfaces */
+    --ink: 26 24% 20%;
+    --ink-soft: 26 16% 40%;
 
     --gradient-warm: linear-gradient(135deg, hsl(38 92% 60%), hsl(18 84% 56%));
     --gradient-blush: linear-gradient(135deg, hsl(350 64% 76%), hsl(28 80% 62%));
