@@ -111,11 +111,8 @@ export function FinalScreen() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.55, duration: 0.7 }}
         >
-          <div className="rounded-xl border border-gold/40 bg-paper-soft/70 p-5 shadow-[0_12px_36px_-16px_hsl(var(--lamp-deep)/0.25)] sm:p-6">
-            <p
-              className="whitespace-pre-line text-pretty font-serif text-[0.98rem] leading-relaxed"
-              style={{ color: "hsl(var(--ink))" }}
-            >
+          <div className="rounded-xl border border-lamp/30 bg-cream p-5 backdrop-blur-sm sm:p-6">
+            <p className="whitespace-pre-line text-pretty font-serif text-[0.98rem] leading-relaxed text-night">
               {gameConfig.personalMessage}
             </p>
           </div>
