@@ -16,15 +16,10 @@ function GiftSunglasses() {
       <svg
         viewBox="0 0 220 92"
         role="img"
-        aria-label="A pair of warm gold sunglasses"
-        className="h-auto w-32 drop-shadow-[0_10px_18px_hsl(var(--night)/0.45)] sm:w-40"
+        aria-label="A pair of stylish sunglasses with black lenses"
+        className="h-auto w-32 drop-shadow-[0_10px_18px_hsl(var(--night)/0.35)] sm:w-40"
       >
         <defs>
-          <linearGradient id="lens-glow" x1="0" y1="0" x2="1" y2="1">
-            <stop offset="0" stopColor="hsl(var(--lamp-glow))" stopOpacity="0.88" />
-            <stop offset="0.55" stopColor="hsl(var(--blush-deep))" stopOpacity="0.75" />
-            <stop offset="1" stopColor="hsl(var(--night-soft))" stopOpacity="0.92" />
-          </linearGradient>
           <linearGradient id="frame-gold" x1="0" y1="0" x2="0" y2="1">
             <stop offset="0" stopColor="hsl(var(--cream))" />
             <stop offset="0.35" stopColor="hsl(var(--gold))" />
@@ -48,14 +43,14 @@ function GiftSunglasses() {
         />
         <path
           d="M20 29c2-4 8-6 14-6h48c7 0 11 6 10 13l-3 19C87 70 75 79 58 79S28 70 25 55l-5-26Z"
-          fill="url(#lens-glow)"
+          fill="hsl(var(--night-deep))"
           stroke="url(#frame-gold)"
           strokeWidth="6"
           strokeLinejoin="round"
         />
         <path
           d="M200 29c-2-4-8-6-14-6h-48c-7 0-11 6-10 13l3 19c2 15 14 24 31 24s30-9 33-24l5-26Z"
-          fill="url(#lens-glow)"
+          fill="hsl(var(--night-deep))"
           stroke="url(#frame-gold)"
           strokeWidth="6"
           strokeLinejoin="round"
@@ -66,17 +61,14 @@ function GiftSunglasses() {
           stroke="hsl(var(--cream))"
           strokeWidth="4"
           strokeLinecap="round"
-          opacity="0.65"
+          opacity="0.5"
         />
         <path
           d="m66 39 3 7 7 3-7 3-3 7-3-7-7-3 7-3 3-7ZM167 44l2 5 5 2-5 2-2 5-2-5-5-2 5-2 2-5Z"
           fill="hsl(var(--cream))"
-          opacity="0.78"
+          opacity="0.85"
         />
       </svg>
-      <p className="mt-1 font-display text-sm italic tracking-wide text-lamp/85 sm:text-base">
-        The future looks bright.
-      </p>
     </motion.div>
   );
 }
@@ -86,14 +78,14 @@ export function FinalScreen() {
 
   return (
     <motion.div
-      className="absolute inset-0 z-50 flex items-start justify-center overflow-y-auto bg-night-gradient"
+      className="absolute inset-0 z-50 flex items-start justify-center overflow-y-auto bg-paper-gradient"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.9, ease: "easeOut" }}
     >
       <Confetti count={34} />
       <div
-        className="pointer-events-none absolute left-1/2 top-1/2 h-[70vh] w-[70vh] -translate-x-1/2 -translate-y-1/2 rounded-full opacity-60"
+        className="pointer-events-none absolute left-1/2 top-1/2 h-[70vh] w-[70vh] -translate-x-1/2 -translate-y-1/2 rounded-full opacity-40"
         style={{ background: "var(--gradient-lamp-radial)" }}
         aria-hidden
       />
@@ -104,10 +96,10 @@ export function FinalScreen() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.15, duration: 0.8, ease: "easeOut" }}
       >
-        <p className="mb-3 text-[0.7rem] uppercase tracking-[0.45em] text-blush/80">
+        <p className="mb-3 text-[0.7rem] uppercase tracking-[0.45em] text-blush-deep">
           Mission Complete
         </p>
-        <h1 className="font-display text-4xl font-semibold leading-tight text-cream sm:text-5xl">
+        <h1 className="font-display text-4xl font-semibold leading-tight text-night sm:text-5xl">
           You found it.
         </h1>
 
@@ -128,7 +120,7 @@ export function FinalScreen() {
             type="button"
             variant="outline"
             size="lg"
-            className="mt-8 gap-2 border-lamp/40 bg-transparent text-lamp hover:bg-lamp/10 hover:text-lamp"
+            className="mt-8 gap-2 border-lamp-deep/50 bg-transparent text-lamp-deep hover:bg-lamp-deep/10 hover:text-lamp-deep"
             onClick={reset}
           >
             <RotateCcw className="h-4 w-4" />

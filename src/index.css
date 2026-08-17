@@ -61,10 +61,17 @@
     --blush-deep: 350 55% 62%;
     --sage: 150 28% 60%;
     --gold: 44 86% 64%;
+    /* Deeper amber for legible accent text on light backgrounds */
+    --lamp-deep: 32 72% 40%;
+
+    /* Warm ivory/off-white — used for the intro and final pages */
+    --paper: 38 42% 96%;
+    --paper-soft: 34 38% 90%;
 
     --gradient-warm: linear-gradient(135deg, hsl(38 92% 60%), hsl(18 84% 56%));
     --gradient-blush: linear-gradient(135deg, hsl(350 64% 76%), hsl(28 80% 62%));
     --gradient-night: linear-gradient(180deg, hsl(230 50% 8%) 0%, hsl(232 52% 4%) 100%);
+    --gradient-paper: linear-gradient(180deg, hsl(38 42% 97%) 0%, hsl(34 38% 90%) 100%);
     --gradient-lamp-radial: radial-gradient(circle at 50% 40%, hsl(38 92% 60% / 0.22), transparent 60%);
 
     --glow-lamp: 0 0 40px hsl(38 95% 65% / 0.5);
@@ -157,6 +164,10 @@ body,
 
   .bg-night-gradient {
     background: var(--gradient-night);
+  }
+
+  .bg-paper-gradient {
+    background: var(--gradient-paper);
   }
 
   .glow-lamp {

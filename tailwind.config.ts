@@ -66,8 +66,13 @@ export default {
 				lamp: {
 					DEFAULT: 'hsl(var(--lamp))',
 					glow: 'hsl(var(--lamp-glow))',
+					deep: 'hsl(var(--lamp-deep))',
 				},
 				cream: 'hsl(var(--cream))',
+				paper: {
+					DEFAULT: 'hsl(var(--paper))',
+					soft: 'hsl(var(--paper-soft))',
+				},
 				blush: {
 					DEFAULT: 'hsl(var(--blush))',
 					deep: 'hsl(var(--blush-deep))',
