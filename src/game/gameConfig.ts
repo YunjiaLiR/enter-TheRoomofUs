@@ -12,7 +12,7 @@ export const gameConfig: GameConfig = {
 
   roomBackgroundImage: "/room-background-warm.png",
   // REPLACE: swap in your own illustration to change the city skyline puzzle artwork.
-  citySkylineImage: "/city-skyline.png",
+  citySkylineImage: "/city-skyline-v2.png",
 
   // Hotspot positions are % of the 43:24 stage and are tuned to the generated
   // background. Adjust here if you regenerate the image.
