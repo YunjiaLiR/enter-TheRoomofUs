@@ -10,59 +10,59 @@ export const gameConfig: GameConfig = {
   // REPLACE: the person this room is built for.
   boyfriendName: "Joshua",
 
-  roomBackgroundImage: "/room-background.png",
+  roomBackgroundImage: "/room-background-warm.png",
   // REPLACE: swap in your own illustration to change the city skyline puzzle artwork.
   citySkylineImage: "/city-skyline.png",
 
-  // Hotspot positions are % of the 16:9 stage and are tuned to the generated
+  // Hotspot positions are % of the 43:24 stage and are tuned to the generated
   // background. Adjust here if you regenerate the image.
   hotspots: [
     {
       id: "citySkyline",
-      x: 19,
-      y: 8,
-      w: 19,
-      h: 47,
+      x: 4,
+      y: 1,
+      w: 41,
+      h: 46,
       label: "The window and the city skyline",
       echo: "A window. The city glitters in the distance.",
       fragmentId: "f1",
     },
     {
       id: "tableTennis",
-      x: 1,
-      y: 71,
-      w: 15,
-      h: 26,
+      x: 0,
+      y: 78,
+      w: 14,
+      h: 22,
       label: "The bedside table with a table-tennis paddle",
       echo: "A paddle and a lone orange ball rest here.",
       fragmentId: "f2",
     },
     {
       id: "chess",
-      x: 44,
-      y: 33,
-      w: 18,
-      h: 20,
+      x: 55,
+      y: 42,
+      w: 29,
+      h: 16,
       label: "The chessboard on the desk",
       echo: "A game is frozen mid-play.",
       fragmentId: "f4",
     },
     {
       id: "piano",
-      x: 72,
-      y: 31,
-      w: 19,
-      h: 38,
+      x: 78,
+      y: 34,
+      w: 22,
+      h: 52,
       label: "The upright piano",
       echo: "The keys wait in the lamplight.",
       fragmentId: "f3",
     },
     {
       id: "hiking",
-      x: 47,
-      y: 79,
-      w: 18,
-      h: 16,
+      x: 52,
+      y: 70,
+      w: 27,
+      h: 30,
       label: "The hiking boots and trail map",
       echo: "Boots and a folded map by the desk.",
       fragmentId: "f5",
@@ -70,7 +70,7 @@ export const gameConfig: GameConfig = {
   ],
 
   // Region over the bed used for the final "under the bed" reveal.
-  finalBedHotspot: { x: 1, y: 58, w: 22, h: 40 },
+  finalBedHotspot: { x: 27, y: 77, w: 22, h: 18 },
 
   mayorTransport: {
     options: [

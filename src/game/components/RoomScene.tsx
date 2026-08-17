@@ -40,7 +40,7 @@ export function RoomScene() {
         <div className="relative aspect-[43/24] max-h-full w-full max-w-[1500px] overflow-hidden rounded-xl border border-border/40 shadow-[0_24px_70px_-24px_hsl(var(--night)/0.95)]">
           <img
             src={gameConfig.roomBackgroundImage}
-            alt="A cosy bedroom at night"
+            alt="A warm, cozy wood-toned bedroom"
             className="absolute inset-0 h-full w-full object-cover"
           />
           {/* vignette */}
@@ -48,7 +48,7 @@ export function RoomScene() {
             className="pointer-events-none absolute inset-0"
             style={{
               boxShadow:
-                "inset 0 0 130px 40px hsl(var(--night) / 0.65)",
+                "inset 0 0 130px 40px hsl(var(--night) / 0.35)",
             }}
             aria-hidden
           />
